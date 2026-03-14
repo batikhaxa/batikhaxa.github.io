@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
+import { supabase } from "@/integrations/supabase/client";
 import constructionImg from "@/assets/construction.png";
-import counterImg from "@/assets/counter.png";
 
 const Index = () => {
   return (
