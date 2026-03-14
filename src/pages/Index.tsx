@@ -2,6 +2,59 @@ import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import constructionImg from "@/assets/construction.png";
 
+const VisitorCounter = () => {
+  const [count, setCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    supabase.functions.invoke("visitor-counter").then(({ data }) => {
+      if (data?.count != null) setCount(data.count);
+    });
+  }, []);
+
+  const digits = String(count ?? 0).padStart(6, "0");
+
+  return (
+    <div style={{ display: "inline-block" }}>
+      <span
+        style={{
+          fontFamily: "'Courier New', monospace",
+          fontSize: 10,
+          display: "block",
+          textAlign: "center",
+          marginBottom: 2,
+        }}
+      >
+        You are visitor #
+      </span>
+      <div
+        style={{
+          display: "inline-flex",
+          background: "#000000",
+          padding: "4px 6px",
+          border: "2px inset #808080",
+        }}
+      >
+        {digits.split("").map((d, i) => (
+          <span
+            key={i}
+            style={{
+              color: "#00ff00",
+              fontFamily: "'Courier New', monospace",
+              fontSize: 22,
+              fontWeight: "bold",
+              width: 16,
+              textAlign: "center",
+              textShadow: "0 0 6px #00ff00",
+            }}
+          >
+            {count === null ? "-" : d}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Index = () => {
   return (
     <div style={{ maxWidth: 640, margin: "0 auto" }}>
