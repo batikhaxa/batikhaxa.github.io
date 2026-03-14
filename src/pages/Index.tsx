@@ -252,11 +252,7 @@ const Index = () => {
         <hr className="retro" />
 
         <center>
-          <img
-            src={counterImg}
-            alt="Visitor Counter"
-            style={{ width: 200, height: "auto" }}
-          />
+          <VisitorCounter />
           <br />
           <br />
           <small
