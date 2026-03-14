@@ -80,9 +80,9 @@ const Index = () => {
             style={{ width: 64, height: 64 }}
           />
           <br />
-          <font style={{ fontSize: 11, fontFamily: "Arial, sans-serif" }}>
+          <span style={{ fontSize: 11, fontFamily: "Arial, sans-serif" }}>
             🚧 This site is under construction! 🚧
-          </font>
+          </span>
         </center>
 
         <hr className="retro" />
