@@ -312,7 +312,7 @@ const Index = () => {
         <CatDivider />
 
         <center>
-          <a href="/exam">
+          <a href="/exam" style={{ display: "inline-flex", alignItems: "center" }}>
             <img src="https://text.glitter-graphics.net/tpurp/g.gif" alt="g" style={{ border: 0 }} />
             <img src="https://text.glitter-graphics.net/tpurp/a.gif" alt="a" style={{ border: 0 }} />
             <img src="https://text.glitter-graphics.net/tpurp/m.gif" alt="m" style={{ border: 0 }} />
