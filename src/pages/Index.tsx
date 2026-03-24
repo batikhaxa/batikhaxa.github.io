@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import catWaveImg from "@/assets/cat-wave.gif";
 import pawIcon from "@/assets/paw-icon.png";
 import dividerImg from "@/assets/divider.gif";
@@ -14,9 +13,12 @@ const VisitorCounter = () => {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    supabase.functions.invoke("visitor-counter").then(({ data }) => {
-      if (data?.count != null) setCount(data.count);
-    });
+    import("@/integrations/supabase/client")
+      .then(({ supabase }) => supabase.functions.invoke("visitor-counter"))
+      .then(({ data }) => {
+        if (data?.count != null) setCount(data.count);
+      })
+      .catch(() => {});
   }, []);
 
   const digits = String(count ?? 0).padStart(6, "0");
