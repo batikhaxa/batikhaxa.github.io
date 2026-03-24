@@ -65,7 +65,7 @@ const Section = ({ label, children }: { label: string; children: React.ReactNode
 
 const Index = () => {
   return (
-    <div style={{ maxWidth: 700, margin: "0 auto" }} className="terminal-flicker">
+    <div style={{ maxWidth: 700, margin: "0 auto" }}>
       {/* Terminal Window */}
       <div className="terminal-window">
         {/* Title Bar */}
