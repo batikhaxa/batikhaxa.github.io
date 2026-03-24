@@ -111,8 +111,11 @@ hr.retro {
 }
 
 .marquee-text {
-  color: #000080;
+  color: #ff69b4;
   font-weight: bold;
   font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Comic Sans MS', cursive;
 }
+
+a:link { color: #0000ff; }
+a:hover { color: #ff1493; }

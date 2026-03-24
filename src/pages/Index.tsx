@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import constructionImg from "@/assets/construction.png";
+import catWaveImg from "@/assets/cat-wave.png";
+import pawIcon from "@/assets/paw-icon.png";
 
 const VisitorCounter = () => {
   const [count, setCount] = useState<number | null>(null);
@@ -17,14 +18,15 @@ const VisitorCounter = () => {
     <div style={{ display: "inline-block" }}>
       <span
         style={{
-          fontFamily: "'Courier New', monospace",
-          fontSize: 10,
+          fontFamily: "'Comic Sans MS', 'Comic Sans', cursive",
+          fontSize: 11,
           display: "block",
           textAlign: "center",
           marginBottom: 2,
+          color: "#ff69b4",
         }}
       >
-        You are visitor #
+        ~*~ You are kitty visitor #~*~
       </span>
       <div
         style={{
@@ -38,13 +40,13 @@ const VisitorCounter = () => {
           <span
             key={i}
             style={{
-              color: "#00ff00",
+              color: "#ff69b4",
               fontFamily: "'Courier New', monospace",
               fontSize: 22,
               fontWeight: "bold",
               width: 16,
               textAlign: "center",
-              textShadow: "0 0 6px #00ff00",
+              textShadow: "0 0 6px #ff69b4",
             }}
           >
             {count === null ? "-" : d}
@@ -54,6 +56,15 @@ const VisitorCounter = () => {
     </div>
   );
 };
+
+const PawBullet = () => (
+  <img
+    src={pawIcon}
+    alt="paw"
+    style={{ width: 18, height: 18, verticalAlign: "middle", marginRight: 6 }}
+    loading="lazy"
+  />
+);
 
 const Index = () => {
   return (
@@ -70,7 +81,7 @@ const Index = () => {
             padding: "3px 6px",
           }}
         >
-          Welcome to My Home Page - Microsoft Internet Explorer
+          🐱 ~*~ sEcReT cAt PaGe ~*~ 🐱 - Microsoft Internet Explorer
         </div>
 
         {/* Toolbar */}
@@ -86,9 +97,6 @@ const Index = () => {
           </a>
           <a href="#" className="retro-btn" style={{ marginRight: 4 }}>
             Reload
-          </a>
-          <a href="#" className="retro-btn" style={{ marginRight: 4 }}>
-            Print
           </a>
         </div>
 
@@ -114,7 +122,7 @@ const Index = () => {
               background: "#ffffff",
             }}
           >
-            http://www.my-homepage.com/~user/index.html
+            http://www.geocities.com/Heartland/Meadows/8742/secret_cats.html
           </span>
         </div>
       </div>
@@ -122,97 +130,124 @@ const Index = () => {
       {/* Main Content Area */}
       <div className="bevel-out" style={{ padding: 15 }}>
         <center>
-          <h1 style={{ fontSize: 28, marginBottom: 0 }}>
-            Welcome to My Home Page!
-          </h1>
-          <p className="marquee-text" style={{ fontSize: 16 }}>
-            ★ Your #1 Source for Information on the 'Net! ★
+          <p
+            style={{
+              fontSize: 11,
+              fontFamily: "'Comic Sans MS', cursive",
+              color: "#ff1493",
+              letterSpacing: 1,
+            }}
+          >
+            ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
           </p>
+
+          <h1
+            style={{
+              fontSize: 26,
+              fontFamily: "'Comic Sans MS', cursive",
+              color: "#ff1493",
+              marginBottom: 4,
+            }}
+          >
+            <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />{" "}
+            OMG how did u find my secret website?!{" "}
+            <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />
+          </h1>
+
+          <p
+            className="marquee-text"
+            style={{
+              fontSize: 14,
+              fontFamily: "'Comic Sans MS', cursive",
+              color: "#ff69b4",
+            }}
+          >
+            ★ ~ tHiS iS mY sEcReT cAt PaGe ~ pLz DoNt TeLl AnYoNe ~ ★
+          </p>
+
           <img
-            src={constructionImg}
-            alt="Under Construction"
-            style={{ width: 64, height: 64 }}
+            src={catWaveImg}
+            alt="Cute waving cat"
+            style={{ width: 150, height: 150 }}
           />
           <br />
-          <span style={{ fontSize: 11, fontFamily: "Arial, sans-serif" }}>
-            🚧 This site is under construction! 🚧
+          <span
+            style={{
+              fontSize: 14,
+              fontFamily: "'Comic Sans MS', cursive",
+              color: "#ff1493",
+              fontWeight: "bold",
+            }}
+          >
+            meow~ i came to say hi!! 🐾
           </span>
         </center>
 
         <hr className="retro" />
 
-        <h2 style={{ fontSize: 20 }}>About Me</h2>
-        <p>
-          Hi there! My name is <b>Dave</b> and I'm a computer enthusiast from
-          Portland, Oregon. I built this page using Notepad and a 28.8k modem.
-          I enjoy programming in C++, collecting shareware, and browsing the
-          World Wide Web.
+        <h2
+          style={{
+            fontSize: 20,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
+        >
+          🐱 AbOuT mE
+        </h2>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          hiiii!! my name is <b>~*kittykat99*~</b> and im a HUGE cat lover!! 🐱💕
+          i made this page on my moms computer when shes not looking lol.
+          i have 3 cats named Whiskers, Mr. Fluffington, and Princess Meowmeow.
+          they r the best cats in the WHOLE world!!!!!
         </p>
 
         <hr className="retro" />
 
-        <h2 style={{ fontSize: 20 }}>Cool Links</h2>
-        <ul style={{ listStyleType: "square" }}>
-          <li>
-            <a href="#">Yahoo! - The Internet Directory</a>
-          </li>
-          <li>
-            <a href="#">Netscape Communications</a>
-          </li>
-          <li>
-            <a href="#">The Encyclopaedia Britannica Online</a>
-          </li>
-          <li>
-            <a href="#">Download.com - Free Shareware</a>
-          </li>
-          <li>
-            <a href="#">Altavista Search Engine</a>
-          </li>
-          <li>
-            <a href="#">The Internet Movie Database</a>
-          </li>
-        </ul>
-
-        <hr className="retro" />
-
-        <h2 style={{ fontSize: 20 }}>My Interests</h2>
-        <table
-          border={1}
-          cellPadding={5}
-          cellSpacing={0}
-          style={{ borderCollapse: "collapse", width: "100%" }}
+        <h2
+          style={{
+            fontSize: 20,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
         >
+          🐾 My Fav Cat Links
+        </h2>
+        <table cellPadding={4} cellSpacing={0} style={{ width: "100%" }}>
           <tbody>
-            <tr style={{ background: "#000080", color: "#ffffff" }}>
+            <tr>
               <td>
-                <b>Topic</b>
-              </td>
-              <td>
-                <b>Description</b>
+                <PawBullet />
+                <a href="#">Cat Secrets & Tips</a>
               </td>
             </tr>
-            <tr style={{ background: "#ffffff" }}>
-              <td>Computers</td>
+            <tr>
               <td>
-                Building PCs, Windows 95, DOS gaming
+                <PawBullet />
+                <a href="#">My Cat Photo Album!!</a>
               </td>
             </tr>
-            <tr style={{ background: "#e0e0e0" }}>
-              <td>Music</td>
+            <tr>
               <td>
-                MIDI files, CD-ROMs, Winamp playlists
+                <PawBullet />
+                <a href="#">How 2 Take Care of Ur Cat</a>
               </td>
             </tr>
-            <tr style={{ background: "#ffffff" }}>
-              <td>Science</td>
+            <tr>
               <td>
-                Space exploration, physics papers, SETI@home
+                <PawBullet />
+                <a href="#">Cool Cat Websites Ring</a>
               </td>
             </tr>
-            <tr style={{ background: "#e0e0e0" }}>
-              <td>Programming</td>
+            <tr>
               <td>
-                C++, Visual Basic, HTML tutorials
+                <PawBullet />
+                <a href="#">Fun Cat Games!!</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <PawBullet />
+                <a href="#">My Fav Cat Breeds 🐱</a>
               </td>
             </tr>
           </tbody>
@@ -220,14 +255,72 @@ const Index = () => {
 
         <hr className="retro" />
 
-        <h2 style={{ fontSize: 20 }}>Guestbook</h2>
-        <p>
-          Please sign my{" "}
+        <h2
+          style={{
+            fontSize: 20,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
+        >
+          🌟 My Cats!!
+        </h2>
+        <table
+          border={1}
+          cellPadding={5}
+          cellSpacing={0}
+          style={{ borderCollapse: "collapse", width: "100%" }}
+        >
+          <tbody>
+            <tr style={{ background: "#ff69b4", color: "#ffffff" }}>
+              <td>
+                <b>Name</b>
+              </td>
+              <td>
+                <b>Breed</b>
+              </td>
+              <td>
+                <b>Personality</b>
+              </td>
+            </tr>
+            <tr style={{ background: "#fff0f5" }}>
+              <td>Whiskers</td>
+              <td>Orange Tabby</td>
+              <td>sleepy & cuddly 😴</td>
+            </tr>
+            <tr style={{ background: "#ffe4e1" }}>
+              <td>Mr. Fluffington</td>
+              <td>Persian</td>
+              <td>fancy & dramatic 👑</td>
+            </tr>
+            <tr style={{ background: "#fff0f5" }}>
+              <td>Princess Meowmeow</td>
+              <td>Calico</td>
+              <td>hyper & silly 🤪</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr className="retro" />
+
+        <h2
+          style={{
+            fontSize: 20,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
+        >
+          📝 Guestbook
+        </h2>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          plz sign my{" "}
           <a href="#">
-            <b>Guestbook</b>
+            <b>guestbook</b>
           </a>
-          ! I'd love to hear from you. You can also reach me at{" "}
-          <a href="mailto:dave@my-homepage.com">dave@my-homepage.com</a>.
+          !! tell me about YOUR cats!! 🐱💕
+          <br />
+          u can also email me at{" "}
+          <a href="mailto:kittykat99@geocities.com">kittykat99@geocities.com</a>
+          ~*~
         </p>
 
         {/* Navigation Buttons */}
@@ -236,16 +329,13 @@ const Index = () => {
             🏠 Home
           </a>
           <a href="#" className="retro-btn" style={{ marginRight: 6 }}>
-            📧 E-mail
+            📧 E-mail Me!
           </a>
           <a href="#" className="retro-btn" style={{ marginRight: 6 }}>
-            🔍 Search
-          </a>
-          <a href="#" className="retro-btn" style={{ marginRight: 6 }}>
-            📚 Links
+            🐱 Cat Pics
           </a>
           <a href="#" className="retro-btn">
-            ❓ FAQ
+            🔗 Webrings
           </a>
         </center>
 
@@ -256,15 +346,21 @@ const Index = () => {
           <br />
           <br />
           <small
-            style={{ fontFamily: "Arial, sans-serif", fontSize: 10 }}
+            style={{
+              fontFamily: "'Comic Sans MS', cursive",
+              fontSize: 10,
+              color: "#ff69b4",
+            }}
           >
-            Best viewed with Netscape Navigator 2.0 at 800x600 resolution.
+            ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
             <br />
-            Made with Notepad. No frames used on this site.
+            made with luv and notepad 💕
             <br />
-            ©1996 Dave's Home Page. All rights reserved.
+            plz dont steal my cat pics!!!! 🙀
             <br />
-            Last updated: November 14, 1996
+            ©2002 ~*kittykat99*~ all rights reserved meow~
+            <br />
+            Last updated: March 17, 2002
           </small>
         </center>
       </div>
@@ -279,7 +375,7 @@ const Index = () => {
           fontFamily: "Arial, sans-serif",
         }}
       >
-        Document: Done.
+        Done
       </div>
     </div>
   );
