@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import catWaveImg from "@/assets/cat-wave.gif";
-import pawIcon from "@/assets/paw-icon.png";
 import dividerImg from "@/assets/divider.gif";
+
+const AsciiDivider = () => (
+  <div className="ascii-divider">
+    ═══════════════════════════════════════════════════
+  </div>
+);
 
 const CatDivider = () => (
   <div style={{ textAlign: "center", margin: "12px 0" }}>
@@ -23,37 +28,21 @@ const VisitorCounter = () => {
 
   return (
     <div style={{ display: "inline-block" }}>
-      <span
-        style={{
-          fontFamily: "'Comic Sans MS', 'Comic Sans', cursive",
-          fontSize: 11,
-          display: "block",
-          textAlign: "center",
-          marginBottom: 2,
-          color: "#ff69b4",
-        }}
-      >
-        ~*~ You are kitty visitor #~*~
+      <span style={{ fontSize: 11, display: "block", textAlign: "center", marginBottom: 2, color: "var(--terminal-dim)" }}>
+        {"// connection #"}
       </span>
-      <div
-        style={{
-          display: "inline-flex",
-          background: "#000000",
-          padding: "4px 6px",
-          border: "2px inset #808080",
-        }}
-      >
+      <div style={{ display: "inline-flex", background: "#000", padding: "4px 6px", border: "1px solid #1a3a1a" }}>
         {digits.split("").map((d, i) => (
           <span
             key={i}
             style={{
-              color: "#ff69b4",
-              fontFamily: "'Courier New', monospace",
+              color: "var(--terminal-green)",
+              fontFamily: "'Share Tech Mono', monospace",
               fontSize: 22,
               fontWeight: "bold",
               width: 16,
               textAlign: "center",
-              textShadow: "0 0 6px #ff69b4",
+              textShadow: "0 0 6px var(--terminal-green)",
             }}
           >
             {count === null ? "-" : d}
@@ -64,299 +53,163 @@ const VisitorCounter = () => {
   );
 };
 
-const PawBullet = () => (
-  <img
-    src={pawIcon}
-    alt="paw"
-    style={{ width: 18, height: 18, verticalAlign: "middle", marginRight: 6 }}
-    loading="lazy"
-  />
+const Section = ({ label, children }: { label: string; children: React.ReactNode }) => (
+  <>
+    <AsciiDivider />
+    <h2 style={{ fontSize: 22, color: "var(--terminal-green)", marginBottom: 8 }} className="glow-text">
+      [{label}]
+    </h2>
+    {children}
+  </>
 );
 
 const Index = () => {
   return (
-    <div style={{ maxWidth: 640, margin: "0 auto" }}>
-      {/* Title Bar Window */}
-      <div className="bevel-out" style={{ marginBottom: 20 }}>
-        <div
-          style={{
-            background: "#000080",
-            color: "#ffffff",
-            fontFamily: "Arial, Helvetica, sans-serif",
-            fontSize: 13,
-            fontWeight: "bold",
-            padding: "3px 6px",
-          }}
-        >
-          🐱 ~*~ sEcReT cAt PaGe ~*~ 🐱 - Microsoft Internet Explorer
+    <div style={{ maxWidth: 700, margin: "0 auto" }} className="terminal-flicker">
+      {/* Terminal Window */}
+      <div className="terminal-window">
+        {/* Title Bar */}
+        <div className="terminal-titlebar">
+          <span className="dot dot-red" />
+          <span className="dot dot-yellow" />
+          <span className="dot dot-green" />
+          <span style={{ marginLeft: 8 }}>root@inda-kursledningen:~/exam</span>
         </div>
 
-        {/* Toolbar */}
-        <div style={{ padding: 4, borderBottom: "1px solid #808080" }}>
-          <a href="#" className="retro-btn" style={{ marginRight: 4 }}>
-            Back
-          </a>
-          <a href="#" className="retro-btn" style={{ marginRight: 4 }}>
-            Forward
-          </a>
-          <a href="#" className="retro-btn" style={{ marginRight: 4 }}>
-            Home
-          </a>
-          <a href="#" className="retro-btn" style={{ marginRight: 4 }}>
-            Reload
-          </a>
-        </div>
+        {/* Content */}
+        <div style={{ padding: "20px 24px" }}>
+          {/* Header */}
+          <div style={{ textAlign: "center", marginBottom: 20 }}>
+            <p style={{ fontSize: 11, color: "var(--terminal-dim)", letterSpacing: 3 }}>
+              ::::::::::::::::::::::::::::::::::::::::::::::::::::
+            </p>
 
-        {/* Address Bar */}
-        <div style={{ padding: 4 }}>
-          <span
-            style={{
-              fontFamily: "Arial, sans-serif",
-              fontSize: 12,
-              marginRight: 6,
-            }}
-          >
-            Address:
-          </span>
-          <span
-            className="bevel-in"
-            style={{
-              display: "inline-block",
-              padding: "2px 8px",
-              fontSize: 12,
-              fontFamily: "Arial, sans-serif",
-              width: "80%",
-              background: "#ffffff",
-            }}
-          >
-            http://www.geocities.com/Heartland/Meadows/8742/secret_cats.html
-          </span>
+            <h1 style={{ fontSize: 28, color: "var(--terminal-red)", marginBottom: 6 }} className="glow-red">
+              !!! OBLIGATORISK TENTA I INDA:n !!!
+            </h1>
+
+            <p style={{ fontSize: 13, color: "var(--terminal-yellow)" }} className="glow-yellow">
+              (AUTHORIZED ACCESS ONLY – du är redan suspect…)
+            </p>
+
+            <img
+              src={catWaveImg}
+              alt="cat"
+              style={{ width: 140, height: 140, marginTop: 12, filter: "hue-rotate(90deg) saturate(0.8)" }}
+            />
+          </div>
+
+          <Section label="SYSTEM MESSAGE">
+            <p className="glow-text" style={{ fontWeight: "bold", fontSize: 16 }}>
+              ACCESS GRANTED.
+            </p>
+            <p>
+              Om du kan läsa detta har du redan lyckats ta dig förbi vår lilla
+              "icke-obligatoriska" koduppgift. Detta innebär att du antingen:
+            </p>
+            <pre style={{ color: "var(--terminal-yellow)", marginLeft: 16, fontSize: 13 }}>
+{`(a) besitter faktisk kompetens
+(b) har använt otillåtna resurser
+(c) är mycket envis`}
+            </pre>
+            <p>
+              Oavsett vilket krävs nu <span className="glow-red">VERIFIERING</span>.
+            </p>
+          </Section>
+
+          <Section label="ANNOUNCEMENT">
+            <p>Med kort varsel har kursledningen beslutat att införa en</p>
+            <p style={{ fontSize: 22, textAlign: "center", margin: "12px 0" }} className="glow-red">
+              OBLIGATORISK TENTA
+            </p>
+            <p>
+              för att säkerställa att samtliga studenter inte enbart förlitat sig på{" "}
+              <span style={{ color: "var(--terminal-red)" }}>CHATGPT</span>,{" "}
+              <span style={{ color: "var(--terminal-red)" }}>c(h)atten</span>, eller andra
+              suspekta entiteter utan faktiskt kan skriva kod med egna fingrar.
+            </p>
+          </Section>
+
+          <Section label="EXAM PROTOCOL">
+            <table cellPadding={4} cellSpacing={0} style={{ width: "100%", fontSize: 13 }}>
+              <tbody>
+                <tr>
+                  <td style={{ color: "var(--terminal-yellow)", width: 80 }}>Plats:</td>
+                  <td>META <span style={{ color: "var(--terminal-dim)" }}>(enda bokningsbara lokal. fråga inte.)</span></td>
+                </tr>
+                <tr>
+                  <td style={{ color: "var(--terminal-yellow)" }}>Datum:</td>
+                  <td>19 MAJ</td>
+                </tr>
+                <tr>
+                  <td style={{ color: "var(--terminal-yellow)" }}>Tid:</td>
+                  <td>17:00 SHARP <span style={{ color: "var(--terminal-dim)" }}>(late arrivals = segmentation fault)</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p style={{ marginTop: 12, color: "var(--terminal-yellow)" }}>Klädsel:</p>
+            <pre style={{ marginLeft: 16, fontSize: 13 }}>
+{`> Ovve (required)
+> Något kattigt (interpret freely. creativity bonus may apply.)`}
+            </pre>
+          </Section>
+
+          <Section label="REFRESHMENTS MODULE">
+            <pre style={{ fontSize: 13 }}>
+{`Alkfri:  ???
+Alkfull: ???`}
+            </pre>
+            <p style={{ color: "var(--terminal-dim)", fontSize: 12 }}>
+              {"// Details will be revealed in a future patch."}
+            </p>
+          </Section>
+
+          <Section label="IMPORTANT NOTE">
+            <p>
+              På grund av lokalbrist har META allokerats för denna examination.
+            </p>
+            <p>Detta är fullt normalt.</p>
+            <p className="glow-red" style={{ fontWeight: "bold" }}>
+              Detta är inte en fest.
+            </p>
+            <p className="glow-red" style={{ fontWeight: "bold", fontSize: 16 }}>
+              Repeat: DETTA ÄR INTE EN FEST.
+            </p>
+          </Section>
+
+          <Section label="FINAL MESSAGE">
+            <p>Du har redan klarat första testet genom att hitta hit.</p>
+            <p>Nästa steg är att överleva tentan.</p>
+            <p style={{ textAlign: "center", fontSize: 20, margin: "16px 0" }} className="glow-text cursor-blink">
+              GOOD LUCK.
+            </p>
+            <p style={{ textAlign: "center", color: "var(--terminal-dim)", fontSize: 13 }}>
+              (you will need it)
+            </p>
+          </Section>
+
+          <AsciiDivider />
+
+          <CatDivider />
+
+          <div style={{ textAlign: "center", marginTop: 16 }}>
+            <VisitorCounter />
+            <br /><br />
+            <small style={{ fontSize: 10, color: "var(--terminal-dim)" }}>
+              ~~ best viewed in a dark room at 3am ~~
+              <br />
+              compiled with gcc and desperation
+              <br />
+              © 2025 kursledningen | all rights reserved
+            </small>
+          </div>
         </div>
       </div>
 
-      {/* Main Content Area */}
-      <div className="bevel-out" style={{ padding: 15 }}>
-        <center>
-          <p
-            style={{
-              fontSize: 11,
-              fontFamily: "'Comic Sans MS', cursive",
-              color: "#ff1493",
-              letterSpacing: 1,
-            }}
-          >
-            ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
-          </p>
-
-          <h1
-            style={{
-              fontSize: 22,
-              fontFamily: "'Comic Sans MS', cursive",
-              color: "#ff1493",
-              marginBottom: 4,
-            }}
-          >
-            <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />{" "}
-            !!! OBLIGATORISK TENTA I INDA:n !!!{" "}
-            <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />
-          </h1>
-
-          <p
-            style={{
-              fontSize: 12,
-              fontFamily: "'Comic Sans MS', cursive",
-              color: "#ff69b4",
-              marginBottom: 8,
-            }}
-          >
-            (AUTHORIZED ACCESS ONLY – du är redan suspect…)
-          </p>
-
-          <img
-            src={catWaveImg}
-            alt="Cute cat"
-            style={{ width: 150, height: 150 }}
-          />
-        </center>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 18,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          🐱 [SYSTEM MESSAGE]
-        </h2>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, fontWeight: "bold", color: "#ff1493" }}>
-          ACCESS GRANTED.
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          Om du kan läsa detta har du redan lyckats ta dig förbi vår lilla "icke-obligatoriska" koduppgift.
-          Detta innebär att du antingen:
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, paddingLeft: 16 }}>
-          (a) besitter faktisk kompetens<br />
-          (b) har använt otillåtna resurser<br />
-          (c) är mycket envis
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          Oavsett vilket krävs nu <b>VERIFIERING</b>.
-        </p>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 18,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          🐾 [ANNOUNCEMENT]
-        </h2>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          Med kort varsel har kursledningen beslutat att införa en
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 18, fontWeight: "bold", color: "#ff1493", textAlign: "center" }}>
-          OBLIGATORISK TENTA
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          för att säkerställa att samtliga studenter inte enbart förlitat sig på
-          <b> CHATGPT</b>, <b>c(h)atten</b>, eller andra suspekta entiteter
-          utan faktiskt kan skriva kod med egna fingrar.
-        </p>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 18,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          🌟 [EXAM PROTOCOL]
-        </h2>
-        <table cellPadding={4} cellSpacing={0} style={{ width: "100%", fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          <tbody>
-            <tr>
-              <td><PawBullet /><b>Plats:</b></td>
-              <td>META (enda bokningsbara lokal. fråga inte.)</td>
-            </tr>
-            <tr>
-              <td><PawBullet /><b>Datum:</b></td>
-              <td>19 MAJ</td>
-            </tr>
-            <tr>
-              <td><PawBullet /><b>Tid:</b></td>
-              <td>17:00 SHARP (late arrivals = segmentation fault)</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, marginTop: 10 }}>
-          <b>Klädsel:</b>
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, paddingLeft: 16 }}>
-          <PawBullet />Ovve (required)<br />
-          <PawBullet />Något kattigt (interpret freely. creativity bonus may apply.)
-        </p>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 18,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          🍹 [REFRESHMENTS MODULE]
-        </h2>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          <PawBullet /><b>Alkfri:</b> ???<br />
-          <PawBullet /><b>Alkfull:</b> ???
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 11, color: "#ff69b4" }}>
-          (Details will be revealed in a future patch.)
-        </p>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 18,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          ⚠️ [IMPORTANT NOTE]
-        </h2>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          På grund av lokalbrist har META allokerats för denna examination.<br />
-          Detta är fullt normalt.<br />
-          <b>Detta är inte en fest.</b><br />
-          Repeat: <b>DETTA ÄR INTE EN FEST.</b>
-        </p>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 18,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          📝 [FINAL MESSAGE]
-        </h2>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          Du har redan klarat första testet genom att hitta hit.
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          Nästa steg är att överleva tentan.
-        </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 16, fontWeight: "bold", color: "#ff1493", textAlign: "center" }}>
-          GOOD LUCK.<br />
-          <span style={{ fontSize: 12, fontWeight: "normal" }}>(you will need it)</span>
-        </p>
-
-        <CatDivider />
-
-        <center>
-          <VisitorCounter />
-          <br />
-          <br />
-          <small
-            style={{
-              fontFamily: "'Comic Sans MS', cursive",
-              fontSize: 10,
-              color: "#ff69b4",
-            }}
-          >
-            ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
-            <br />
-            made with luv and notepad 💕
-            <br />
-            ©2002 ~*kursledningen*~ all rights reserved meow~
-          </small>
-        </center>
-      </div>
-
-      {/* Status Bar */}
-      <div
-        className="bevel-in"
-        style={{
-          padding: "3px 10px",
-          fontSize: 12,
-          marginTop: 4,
-          fontFamily: "Arial, sans-serif",
-        }}
-      >
-        Done
+      {/* Status line */}
+      <div style={{ padding: "4px 12px", fontSize: 11, color: "var(--terminal-dim)", marginTop: 4 }}>
+        <span className="terminal-prompt">process exited with code 0</span>
       </div>
     </div>
   );
