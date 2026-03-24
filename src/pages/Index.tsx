@@ -286,8 +286,6 @@ const Index = () => {
           >
             ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
           </p>
-          <VisitorCounter />
-          <br />
           <br />
           <small
             style={{
