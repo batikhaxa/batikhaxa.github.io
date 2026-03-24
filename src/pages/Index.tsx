@@ -13,9 +13,12 @@ const VisitorCounter = () => {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    supabase.functions.invoke("visitor-counter").then(({ data }) => {
-      if (data?.count != null) setCount(data.count);
-    });
+    import("@/integrations/supabase/client")
+      .then(({ supabase }) => supabase.functions.invoke("visitor-counter"))
+      .then(({ data }) => {
+        if (data?.count != null) setCount(data.count);
+      })
+      .catch(() => {});
   }, []);
 
   const digits = String(count ?? 0).padStart(6, "0");
