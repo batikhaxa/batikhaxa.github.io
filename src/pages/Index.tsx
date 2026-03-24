@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import catWaveImg from "@/assets/cat-wave.gif";
 import pawIcon from "@/assets/paw-icon.png";
 import dividerImg from "@/assets/divider.gif";
@@ -9,62 +8,6 @@ const CatDivider = () => (
   </div>
 );
 
-const VisitorCounter = () => {
-  const [count, setCount] = useState<number | null>(null);
-
-  useEffect(() => {
-    import("@/integrations/supabase/client")
-      .then(({ supabase }) => supabase.functions.invoke("visitor-counter"))
-      .then(({ data }) => {
-        if (data?.count != null) setCount(data.count);
-      })
-      .catch(() => {});
-  }, []);
-
-  const digits = String(count ?? 0).padStart(6, "0");
-
-  return (
-    <div style={{ display: "inline-block" }}>
-      <span
-        style={{
-          fontFamily: "'Comic Sans MS', 'Comic Sans', cursive",
-          fontSize: 11,
-          display: "block",
-          textAlign: "center",
-          marginBottom: 2,
-          color: "#ff69b4",
-        }}
-      >
-        ~*~ You are kitty visitor #~*~
-      </span>
-      <div
-        style={{
-          display: "inline-flex",
-          background: "#000000",
-          padding: "4px 6px",
-          border: "2px inset #808080",
-        }}
-      >
-        {digits.split("").map((d, i) => (
-          <span
-            key={i}
-            style={{
-              color: "#ff69b4",
-              fontFamily: "'Courier New', monospace",
-              fontSize: 22,
-              fontWeight: "bold",
-              width: 16,
-              textAlign: "center",
-              textShadow: "0 0 6px #ff69b4",
-            }}
-          >
-            {count === null ? "-" : d}
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 const PawBullet = () => (
   <img
@@ -343,8 +286,6 @@ const Index = () => {
           >
             ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
           </p>
-          <VisitorCounter />
-          <br />
           <br />
           <small
             style={{
