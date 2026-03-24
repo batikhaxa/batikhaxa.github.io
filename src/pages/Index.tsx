@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import catWaveImg from "@/assets/cat-wave.png";
+import catWaveImg from "@/assets/cat-wave.gif";
 import pawIcon from "@/assets/paw-icon.png";
+import dividerImg from "@/assets/divider.gif";
+
+const CatDivider = () => (
+  <div style={{ textAlign: "center", margin: "12px 0" }}>
+    <img src={dividerImg} alt="" style={{ width: "100%", maxWidth: 400, height: "auto" }} />
+  </div>
+);
 
 const VisitorCounter = () => {
   const [count, setCount] = useState<number | null>(null);
