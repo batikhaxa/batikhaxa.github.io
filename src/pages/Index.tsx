@@ -250,6 +250,11 @@ const Index = () => {
           Nu återstår bara att bevisa att du kan överleva resten.
         </p>
         <center>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 12, margin: "10px 0" }}>
+            <img src={catFaceImg} alt="" style={{ width: 28 }} />
+            <img src={coderTypingImg} alt="" style={{ width: 60 }} />
+            <img src={catFaceImg} alt="" style={{ width: 28 }} />
+          </div>
           <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 15, fontWeight: "bold", color: "#ff1493" }}>
             good luck!!
             <br />
