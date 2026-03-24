@@ -190,7 +190,7 @@ const Index = () => {
           </span>
         </center>
 
-        <hr className="retro" />
+        <CatDivider />
 
         <h2
           style={{
@@ -208,7 +208,7 @@ const Index = () => {
           they r the best cats in the WHOLE world!!!!!
         </p>
 
-        <hr className="retro" />
+        <CatDivider />
 
         <h2
           style={{
@@ -260,7 +260,7 @@ const Index = () => {
           </tbody>
         </table>
 
-        <hr className="retro" />
+        <CatDivider />
 
         <h2
           style={{
@@ -307,7 +307,7 @@ const Index = () => {
           </tbody>
         </table>
 
-        <hr className="retro" />
+        <CatDivider />
 
         <h2
           style={{
@@ -346,7 +346,7 @@ const Index = () => {
           </a>
         </center>
 
-        <hr className="retro" />
+        <CatDivider />
 
         <center>
           <VisitorCounter />
