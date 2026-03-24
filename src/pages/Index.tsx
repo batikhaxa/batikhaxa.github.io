@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import catWaveImg from "@/assets/cat-wave.gif";
 import pawIcon from "@/assets/paw-icon.png";
 import dividerImg from "@/assets/divider.gif";
