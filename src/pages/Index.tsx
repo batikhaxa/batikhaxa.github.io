@@ -304,7 +304,7 @@ const Index = () => {
           >
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
             <br />
-            made with luv and notepad 💕
+            made with luv and notepad 💕 <img src={catFaceImg} alt="" style={{ width: 18, verticalAlign: "middle" }} />
             <br />
             ©2002 ~*INDA*~ all rights reserved meow~
           </small>

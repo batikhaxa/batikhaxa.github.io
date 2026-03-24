@@ -206,9 +206,14 @@ const Exam = () => {
           <p style={{ fontSize: 11, fontFamily: "'Comic Sans MS', cursive", color: "#ff1493", letterSpacing: 1 }}>
             ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
           </p>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 10, margin: "8px 0" }}>
+            <img src={catFaceImg} alt="" style={{ width: 22 }} />
+            <img src={coderSignImg} alt="" style={{ width: 50 }} />
+            <img src={catFaceImg} alt="" style={{ width: 22 }} />
+          </div>
           <small style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 10, color: "#ff69b4" }}>
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
-            <br />made with luv and notepad 💕
+            <br />made with luv and notepad 💕 <img src={catFaceImg} alt="" style={{ width: 16, verticalAlign: "middle" }} />
             <br />©2002 ~*INDA*~ all rights reserved meow~
           </small>
         </center>
