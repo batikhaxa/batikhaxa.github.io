@@ -312,6 +312,25 @@ const Index = () => {
         <CatDivider />
 
         <center>
+          <a href="/exam">
+            <img src="https://text.glitter-graphics.net/tpurp/g.gif" alt="g" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/a.gif" alt="a" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/m.gif" alt="m" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/l.gif" alt="l" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/a.gif" alt="a" style={{ border: 0 }} />
+            <img src="https://dl3.glitter-graphics.net/empty.gif" alt="" style={{ width: 20, border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/t.gif" alt="t" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/e.gif" alt="e" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/n.gif" alt="n" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/t.gif" alt="t" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/o.gif" alt="o" style={{ border: 0 }} />
+            <img src="https://text.glitter-graphics.net/tpurp/r.gif" alt="r" style={{ border: 0 }} />
+          </a>
+        </center>
+
+        <CatDivider />
+
+        <center>
           <p
             style={{
               fontSize: 11,
