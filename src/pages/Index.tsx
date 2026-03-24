@@ -1,6 +1,9 @@
 import catWaveImg from "@/assets/cat-wave.gif";
 import pawIcon from "@/assets/paw-icon.png";
 import dividerImg from "@/assets/divider.gif";
+import coderSignImg from "@/assets/coder-sign.gif";
+import coderTypingImg from "@/assets/coder-typing.gif";
+import catFaceImg from "@/assets/cat-face.gif";
 
 const CatDivider = () => (
   <div style={{ textAlign: "center", margin: "12px 0" }}>
@@ -117,11 +120,11 @@ const Index = () => {
             ★ ~ pLz dOnT tElL tHe oThErS ~ ★
           </p>
 
-          <img
-            src={catWaveImg}
-            alt="Cute cat"
-            style={{ width: 150, height: 150 }}
-          />
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
+            <img src={coderTypingImg} alt="Coder typing" style={{ width: 80 }} />
+            <img src={catWaveImg} alt="Cute cat" style={{ width: 150, height: 150 }} />
+            <img src={coderSignImg} alt="Coder at work" style={{ width: 80 }} />
+          </div>
           <br />
           <span
             style={{
@@ -247,6 +250,11 @@ const Index = () => {
           Nu återstår bara att bevisa att du kan överleva resten.
         </p>
         <center>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 12, margin: "10px 0" }}>
+            <img src={catFaceImg} alt="" style={{ width: 28 }} />
+            <img src={coderTypingImg} alt="" style={{ width: 60 }} />
+            <img src={catFaceImg} alt="" style={{ width: 28 }} />
+          </div>
           <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 15, fontWeight: "bold", color: "#ff1493" }}>
             good luck!!
             <br />
@@ -296,7 +304,7 @@ const Index = () => {
           >
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
             <br />
-            made with luv and notepad 💕
+            made with luv and notepad 💕 <img src={catFaceImg} alt="" style={{ width: 18, verticalAlign: "middle" }} />
             <br />
             ©2002 ~*INDA*~ all rights reserved meow~
           </small>

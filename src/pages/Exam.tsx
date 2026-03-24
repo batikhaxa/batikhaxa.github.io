@@ -1,5 +1,8 @@
 import dividerImg from "@/assets/divider.gif";
 import pawIcon from "@/assets/paw-icon.png";
+import coderSignImg from "@/assets/coder-sign.gif";
+import coderTypingImg from "@/assets/coder-typing.gif";
+import catFaceImg from "@/assets/cat-face.gif";
 
 const CatDivider = () => (
   <div style={{ textAlign: "center", margin: "12px 0" }}>
@@ -52,6 +55,11 @@ const Exam = () => {
             GAMLA TENTOR{" "}
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />
           </h1>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 16, margin: "8px 0" }}>
+            <img src={coderSignImg} alt="Coder at work" style={{ width: 60 }} />
+            <img src={catFaceImg} alt="" style={{ width: 30 }} />
+            <img src={coderTypingImg} alt="Coder typing" style={{ width: 60 }} />
+          </div>
         </center>
 
         <CatDivider />
@@ -198,9 +206,14 @@ const Exam = () => {
           <p style={{ fontSize: 11, fontFamily: "'Comic Sans MS', cursive", color: "#ff1493", letterSpacing: 1 }}>
             ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
           </p>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 10, margin: "8px 0" }}>
+            <img src={catFaceImg} alt="" style={{ width: 22 }} />
+            <img src={coderSignImg} alt="" style={{ width: 50 }} />
+            <img src={catFaceImg} alt="" style={{ width: 22 }} />
+          </div>
           <small style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 10, color: "#ff69b4" }}>
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
-            <br />made with luv and notepad 💕
+            <br />made with luv and notepad 💕 <img src={catFaceImg} alt="" style={{ width: 16, verticalAlign: "middle" }} />
             <br />©2002 ~*INDA*~ all rights reserved meow~
           </small>
         </center>
