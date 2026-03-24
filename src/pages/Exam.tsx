@@ -1,5 +1,8 @@
 import dividerImg from "@/assets/divider.gif";
 import pawIcon from "@/assets/paw-icon.png";
+import coderSignImg from "@/assets/coder-sign.gif";
+import coderTypingImg from "@/assets/coder-typing.gif";
+import catFaceImg from "@/assets/cat-face.gif";
 
 const CatDivider = () => (
   <div style={{ textAlign: "center", margin: "12px 0" }}>
