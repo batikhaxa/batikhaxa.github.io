@@ -150,201 +150,179 @@ const Index = () => {
 
           <h1
             style={{
-              fontSize: 26,
+              fontSize: 22,
               fontFamily: "'Comic Sans MS', cursive",
               color: "#ff1493",
               marginBottom: 4,
             }}
           >
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />{" "}
-            OMG how did u find my secret website?!{" "}
+            !!! OBLIGATORISK TENTA I INDA:n !!!{" "}
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />
           </h1>
 
           <p
-            className="marquee-text"
             style={{
-              fontSize: 14,
+              fontSize: 12,
               fontFamily: "'Comic Sans MS', cursive",
               color: "#ff69b4",
+              marginBottom: 8,
             }}
           >
-            ★ ~ tHiS iS mY sEcReT cAt PaGe ~ pLz DoNt TeLl AnYoNe ~ ★
+            (AUTHORIZED ACCESS ONLY – du är redan suspect…)
           </p>
 
           <img
             src={catWaveImg}
-            alt="Cute waving cat"
+            alt="Cute cat"
             style={{ width: 150, height: 150 }}
           />
-          <br />
-          <span
-            style={{
-              fontSize: 14,
-              fontFamily: "'Comic Sans MS', cursive",
-              color: "#ff1493",
-              fontWeight: "bold",
-            }}
-          >
-            meow~ i came to say hi!! 🐾
-          </span>
         </center>
 
         <CatDivider />
 
         <h2
           style={{
-            fontSize: 20,
+            fontSize: 18,
             fontFamily: "'Comic Sans MS', cursive",
             color: "#ff1493",
           }}
         >
-          🐱 AbOuT mE
+          🐱 [SYSTEM MESSAGE]
         </h2>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, fontWeight: "bold", color: "#ff1493" }}>
+          ACCESS GRANTED.
+        </p>
         <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          hiiii!! my name is <b>~*kittykat99*~</b> and im a HUGE cat lover!! 🐱💕
-          i made this page on my moms computer when shes not looking lol.
-          i have 3 cats named Whiskers, Mr. Fluffington, and Princess Meowmeow.
-          they r the best cats in the WHOLE world!!!!!
+          Om du kan läsa detta har du redan lyckats ta dig förbi vår lilla "icke-obligatoriska" koduppgift.
+          Detta innebär att du antingen:
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, paddingLeft: 16 }}>
+          (a) besitter faktisk kompetens<br />
+          (b) har använt otillåtna resurser<br />
+          (c) är mycket envis
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          Oavsett vilket krävs nu <b>VERIFIERING</b>.
         </p>
 
         <CatDivider />
 
         <h2
           style={{
-            fontSize: 20,
+            fontSize: 18,
             fontFamily: "'Comic Sans MS', cursive",
             color: "#ff1493",
           }}
         >
-          🐾 My Fav Cat Links
-        </h2>
-        <table cellPadding={4} cellSpacing={0} style={{ width: "100%" }}>
-          <tbody>
-            <tr>
-              <td>
-                <PawBullet />
-                <a href="#">Cat Secrets & Tips</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <PawBullet />
-                <a href="#">My Cat Photo Album!!</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <PawBullet />
-                <a href="#">How 2 Take Care of Ur Cat</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <PawBullet />
-                <a href="#">Cool Cat Websites Ring</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <PawBullet />
-                <a href="#">Fun Cat Games!!</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <PawBullet />
-                <a href="#">My Fav Cat Breeds 🐱</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 20,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          🌟 My Cats!!
-        </h2>
-        <table
-          border={1}
-          cellPadding={5}
-          cellSpacing={0}
-          style={{ borderCollapse: "collapse", width: "100%" }}
-        >
-          <tbody>
-            <tr style={{ background: "#ff69b4", color: "#ffffff" }}>
-              <td>
-                <b>Name</b>
-              </td>
-              <td>
-                <b>Breed</b>
-              </td>
-              <td>
-                <b>Personality</b>
-              </td>
-            </tr>
-            <tr style={{ background: "#fff0f5" }}>
-              <td>Whiskers</td>
-              <td>Orange Tabby</td>
-              <td>sleepy & cuddly 😴</td>
-            </tr>
-            <tr style={{ background: "#ffe4e1" }}>
-              <td>Mr. Fluffington</td>
-              <td>Persian</td>
-              <td>fancy & dramatic 👑</td>
-            </tr>
-            <tr style={{ background: "#fff0f5" }}>
-              <td>Princess Meowmeow</td>
-              <td>Calico</td>
-              <td>hyper & silly 🤪</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <CatDivider />
-
-        <h2
-          style={{
-            fontSize: 20,
-            fontFamily: "'Comic Sans MS', cursive",
-            color: "#ff1493",
-          }}
-        >
-          📝 Guestbook
+          🐾 [ANNOUNCEMENT]
         </h2>
         <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
-          plz sign my{" "}
-          <a href="#">
-            <b>guestbook</b>
-          </a>
-          !! tell me about YOUR cats!! 🐱💕
-          <br />
-          u can also email me at{" "}
-          <a href="mailto:kittykat99@geocities.com">kittykat99@geocities.com</a>
-          ~*~
+          Med kort varsel har kursledningen beslutat att införa en
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 18, fontWeight: "bold", color: "#ff1493", textAlign: "center" }}>
+          OBLIGATORISK TENTA
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          för att säkerställa att samtliga studenter inte enbart förlitat sig på
+          <b> CHATGPT</b>, <b>c(h)atten</b>, eller andra suspekta entiteter
+          utan faktiskt kan skriva kod med egna fingrar.
         </p>
 
-        {/* Navigation Buttons */}
-        <center style={{ marginTop: 15 }}>
-          <a href="#" className="retro-btn" style={{ marginRight: 6 }}>
-            🏠 Home
-          </a>
-          <a href="#" className="retro-btn" style={{ marginRight: 6 }}>
-            📧 E-mail Me!
-          </a>
-          <a href="#" className="retro-btn" style={{ marginRight: 6 }}>
-            🐱 Cat Pics
-          </a>
-          <a href="#" className="retro-btn">
-            🔗 Webrings
-          </a>
-        </center>
+        <CatDivider />
+
+        <h2
+          style={{
+            fontSize: 18,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
+        >
+          🌟 [EXAM PROTOCOL]
+        </h2>
+        <table cellPadding={4} cellSpacing={0} style={{ width: "100%", fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          <tbody>
+            <tr>
+              <td><PawBullet /><b>Plats:</b></td>
+              <td>META (enda bokningsbara lokal. fråga inte.)</td>
+            </tr>
+            <tr>
+              <td><PawBullet /><b>Datum:</b></td>
+              <td>19 MAJ</td>
+            </tr>
+            <tr>
+              <td><PawBullet /><b>Tid:</b></td>
+              <td>17:00 SHARP (late arrivals = segmentation fault)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, marginTop: 10 }}>
+          <b>Klädsel:</b>
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, paddingLeft: 16 }}>
+          <PawBullet />Ovve (required)<br />
+          <PawBullet />Något kattigt (interpret freely. creativity bonus may apply.)
+        </p>
+
+        <CatDivider />
+
+        <h2
+          style={{
+            fontSize: 18,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
+        >
+          🍹 [REFRESHMENTS MODULE]
+        </h2>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          <PawBullet /><b>Alkfri:</b> ???<br />
+          <PawBullet /><b>Alkfull:</b> ???
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 11, color: "#ff69b4" }}>
+          (Details will be revealed in a future patch.)
+        </p>
+
+        <CatDivider />
+
+        <h2
+          style={{
+            fontSize: 18,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
+        >
+          ⚠️ [IMPORTANT NOTE]
+        </h2>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          På grund av lokalbrist har META allokerats för denna examination.<br />
+          Detta är fullt normalt.<br />
+          <b>Detta är inte en fest.</b><br />
+          Repeat: <b>DETTA ÄR INTE EN FEST.</b>
+        </p>
+
+        <CatDivider />
+
+        <h2
+          style={{
+            fontSize: 18,
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#ff1493",
+          }}
+        >
+          📝 [FINAL MESSAGE]
+        </h2>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          Du har redan klarat första testet genom att hitta hit.
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+          Nästa steg är att överleva tentan.
+        </p>
+        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 16, fontWeight: "bold", color: "#ff1493", textAlign: "center" }}>
+          GOOD LUCK.<br />
+          <span style={{ fontSize: 12, fontWeight: "normal" }}>(you will need it)</span>
+        </p>
 
         <CatDivider />
 
@@ -363,11 +341,7 @@ const Index = () => {
             <br />
             made with luv and notepad 💕
             <br />
-            plz dont steal my cat pics!!!! 🙀
-            <br />
-            ©2002 ~*kittykat99*~ all rights reserved meow~
-            <br />
-            Last updated: March 17, 2002
+            ©2002 ~*kursledningen*~ all rights reserved meow~
           </small>
         </center>
       </div>
