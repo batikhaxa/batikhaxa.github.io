@@ -28,7 +28,7 @@ const Exam = () => {
           🐱 ~*~ INDA TENTA ~*~ 🐱 - Microsoft Internet Explorer
         </div>
         <div style={{ padding: 4, borderBottom: "1px solid #808080" }}>
-          <a href="/" className="retro-btn" style={{ marginRight: 4 }}>Back</a>
+          <a href="/" className="retro-btn" style={{ marginRight: 4 }}>⬅ Back to secret page</a>
           <a href="#" className="retro-btn" style={{ marginRight: 4 }}>Forward</a>
           <a href="/" className="retro-btn" style={{ marginRight: 4 }}>Home</a>
           <a href="#" className="retro-btn" style={{ marginRight: 4 }}>Reload</a>
