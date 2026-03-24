@@ -120,11 +120,11 @@ const Index = () => {
             ★ ~ pLz dOnT tElL tHe oThErS ~ ★
           </p>
 
-          <img
-            src={catWaveImg}
-            alt="Cute cat"
-            style={{ width: 150, height: 150 }}
-          />
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
+            <img src={coderTypingImg} alt="Coder typing" style={{ width: 80 }} />
+            <img src={catWaveImg} alt="Cute cat" style={{ width: 150, height: 150 }} />
+            <img src={coderSignImg} alt="Coder at work" style={{ width: 80 }} />
+          </div>
           <br />
           <span
             style={{
