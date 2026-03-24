@@ -55,6 +55,11 @@ const Exam = () => {
             GAMLA TENTOR{" "}
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />
           </h1>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 16, margin: "8px 0" }}>
+            <img src={coderSignImg} alt="Coder at work" style={{ width: 60 }} />
+            <img src={catFaceImg} alt="" style={{ width: 30 }} />
+            <img src={coderTypingImg} alt="Coder typing" style={{ width: 60 }} />
+          </div>
         </center>
 
         <CatDivider />
