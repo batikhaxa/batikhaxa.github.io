@@ -87,7 +87,7 @@ const Index = () => {
         <center>
           <p
             style={{
-              fontSize: 11,
+              fontSize: 13,
               fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               letterSpacing: 1,
@@ -140,10 +140,10 @@ const Index = () => {
 
         <CatDivider />
 
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           om du kan läsa detta betyder det att du faktiskt lyckades ta dig in på denna super-hemliga lilla web page... vilket tyvärr också betyder att du nu är kvalificerad för vidare prövning!!!
         </p>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Eftersom du kunde lösa uppgiften och hitta hit finns det inte längre någon ursäkt som
           <br />
           <b>"oj jag råkade bara få rätt"</b>
@@ -152,10 +152,10 @@ const Index = () => {
           <br />
           <b>"det var nog c(h)atten som gjorde allt"</b>
         </p>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13, fontWeight: "bold", color: "#ff1493" }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 16, fontWeight: "bold", color: "#ff1493" }}>
           NOPE!!!
         </p>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           för att säkerställa att INDA:s studenter verkligen besitter de mystiska och uråldriga kunskaper de förväntas ha samlat på sig under kursens gång har det med mycket kort varsel beslutats att en
         </p>
         <center>
@@ -169,7 +169,7 @@ const Index = () => {
             !!! OBLIGATORISK TENTA !!!
           </h2>
         </center>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           måste äga rum.
         </p>
 
@@ -189,7 +189,7 @@ const Index = () => {
             <tr><td><PawBullet /><b>Plats:</b> META</td></tr>
             <tr><td><PawBullet /><b>Datum:</b> 19 maj</td></tr>
             <tr><td><PawBullet /><b>Tid:</b> 17:00</td></tr>
-            <tr><td><PawBullet /><b>Dress code:</b> ovve + något kattigt<br /><span style={{ fontSize: 11, color: "#ff69b4" }}>(ears? tail? suspicious whiskers? u decide...)</span></td></tr>
+            <tr><td><PawBullet /><b>Dress code:</b> ovve + något kattigt<br /><span style={{ fontSize: 13, color: "#d6336c" }}>(ears? tail? suspicious whiskers? u decide...)</span></td></tr>
           </tbody>
         </table>
 
@@ -208,7 +208,7 @@ const Index = () => {
           <tbody>
             <tr><td><PawBullet /><b>Alkfri:</b> secret</td></tr>
             <tr><td><PawBullet /><b>Alkfull:</b> also secret</td></tr>
-            <tr><td><span style={{ fontSize: 11, color: "#ff69b4" }}>(details on separate page bc technology has limits)</span></td></tr>
+            <tr><td><span style={{ fontSize: 13, color: "#d6336c" }}>(details on separate page bc technology has limits)</span></td></tr>
           </tbody>
         </table>
 
@@ -223,7 +223,7 @@ const Index = () => {
         >
           ⚠️ vIkTiGt mEdDeLaNdE
         </h2>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Pga lokalbrist var META den enda plats som gick att boka för denna ytterst seriösa examination.
           <br />
           Detta är helt normalt och inte alls märkligt.
@@ -244,7 +244,7 @@ const Index = () => {
         >
           📝 fInAl nOtE
         </h2>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Du har redan klarat första testet genom att hitta hit.
           <br />
           Nu återstår bara att bevisa att du kan överleva resten.
@@ -286,7 +286,7 @@ const Index = () => {
         <center>
           <p
             style={{
-              fontSize: 11,
+              fontSize: 13,
               fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               letterSpacing: 1,
@@ -298,8 +298,8 @@ const Index = () => {
           <small
             style={{
               fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
-              fontSize: 10,
-              color: "#ff69b4",
+              fontSize: 12,
+              color: "#d6336c",
             }}
           >
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
