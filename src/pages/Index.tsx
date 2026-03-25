@@ -4,6 +4,11 @@ import dividerImg from "@/assets/divider.gif";
 import coderSignImg from "@/assets/coder-sign.gif";
 import coderTypingImg from "@/assets/coder-typing.gif";
 import catFaceImg from "@/assets/cat-face.gif";
+import pawGif from "@/assets/paw.gif";
+import drinkGif from "@/assets/drink.gif";
+import warningGif from "@/assets/warning.gif";
+import exclamationGif from "@/assets/exclamation.gif";
+import madewithGif from "@/assets/madewith.gif";
 
 const CatDivider = () => (
   <div style={{ textAlign: "center", margin: "12px 0" }}>
@@ -199,7 +204,7 @@ const Index = () => {
             color: "#ff1493",
           }}
         >
-          🐾 tEnTa iNfO
+          <img src={pawGif} alt="paw" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> tEnTa iNfO
         </h2>
         <table cellPadding={4} cellSpacing={0} style={{ width: "100%" }}>
           <tbody>
@@ -219,7 +224,7 @@ const Index = () => {
             color: "#ff1493",
           }}
         >
-          🥤 dRyCkEs moDuLe
+          <img src={drinkGif} alt="drink" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> dRyCkEs moDuLe
         </h2>
         <table cellPadding={4} cellSpacing={0} style={{ width: "100%" }}>
           <tbody>
@@ -238,7 +243,7 @@ const Index = () => {
             color: "#ff1493",
           }}
         >
-          ⚠️ vIkTiGt mEdDeLaNdE
+          <img src={warningGif} alt="warning" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> vIkTiGt mEdDeLaNdE
         </h2>
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Pga lokalbrist var META den enda plats som gick att boka för denna ytterst seriösa examination.
@@ -259,7 +264,7 @@ const Index = () => {
             color: "#ff1493",
           }}
         >
-          📝 fInAl nOtE
+          <img src={exclamationGif} alt="note" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> fInAl nOtE
         </h2>
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Du har redan klarat första testet genom att hitta hit.
@@ -304,6 +309,8 @@ const Index = () => {
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
             <br />
             made with luv and notepad 💕 <img src={catFaceImg} alt="" style={{ width: 18, verticalAlign: "middle" }} />
+            <br />
+            <img src={madewithGif} alt="Made with Notepad" style={{ verticalAlign: "middle", marginTop: 4 }} />
             <br />
             ©2002 ~*INDA*~ all rights reserved meow~
           </small>
