@@ -10,7 +10,7 @@ const CatDivider = () => (
     <img src={dividerImg} alt="" style={{ width: "100%", maxWidth: 400, height: "auto" }} />
   </div>
 );
-
+import registerNowImg from "@/assets/register-now.gif";
 
 const PawBullet = () => (
   <img
