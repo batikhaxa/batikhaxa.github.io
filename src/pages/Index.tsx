@@ -87,7 +87,7 @@ const Index = () => {
         <center>
           <p
             style={{
-              fontSize: 11,
+              fontSize: 13,
               fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               letterSpacing: 1,
@@ -152,7 +152,7 @@ const Index = () => {
           <br />
           <b>"det var nog c(h)atten som gjorde allt"</b>
         </p>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13, fontWeight: "bold", color: "#ff1493" }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 16, fontWeight: "bold", color: "#ff1493" }}>
           NOPE!!!
         </p>
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
@@ -169,7 +169,7 @@ const Index = () => {
             !!! OBLIGATORISK TENTA !!!
           </h2>
         </center>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           måste äga rum.
         </p>
 
@@ -189,7 +189,7 @@ const Index = () => {
             <tr><td><PawBullet /><b>Plats:</b> META</td></tr>
             <tr><td><PawBullet /><b>Datum:</b> 19 maj</td></tr>
             <tr><td><PawBullet /><b>Tid:</b> 17:00</td></tr>
-            <tr><td><PawBullet /><b>Dress code:</b> ovve + något kattigt<br /><span style={{ fontSize: 11, color: "#ff69b4" }}>(ears? tail? suspicious whiskers? u decide...)</span></td></tr>
+            <tr><td><PawBullet /><b>Dress code:</b> ovve + något kattigt<br /><span style={{ fontSize: 13, color: "#d6336c" }}>(ears? tail? suspicious whiskers? u decide...)</span></td></tr>
           </tbody>
         </table>
 
@@ -208,7 +208,7 @@ const Index = () => {
           <tbody>
             <tr><td><PawBullet /><b>Alkfri:</b> secret</td></tr>
             <tr><td><PawBullet /><b>Alkfull:</b> also secret</td></tr>
-            <tr><td><span style={{ fontSize: 11, color: "#ff69b4" }}>(details on separate page bc technology has limits)</span></td></tr>
+            <tr><td><span style={{ fontSize: 13, color: "#d6336c" }}>(details on separate page bc technology has limits)</span></td></tr>
           </tbody>
         </table>
 
@@ -286,7 +286,7 @@ const Index = () => {
         <center>
           <p
             style={{
-              fontSize: 11,
+              fontSize: 13,
               fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               letterSpacing: 1,
@@ -298,8 +298,8 @@ const Index = () => {
           <small
             style={{
               fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
-              fontSize: 10,
-              color: "#ff69b4",
+              fontSize: 12,
+              color: "#d6336c",
             }}
           >
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
