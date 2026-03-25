@@ -40,7 +40,7 @@ const Index = () => {
         </div>
 
         {/* Toolbar */}
-        <div style={{ padding: 4, borderBottom: "1px solid #808080" }}>
+        <div style={{ padding: 4, borderBottom: "1px solid #808080", fontWeight: "normal" }}>
           <a href="#" className="retro-btn" style={{ marginRight: 4 }}>
             Back
           </a>
@@ -56,7 +56,7 @@ const Index = () => {
         </div>
 
         {/* Address Bar */}
-        <div style={{ padding: 4 }}>
+        <div style={{ padding: 4, fontWeight: "normal" }}>
           <span
             style={{
               fontFamily: "Arial, sans-serif",
