@@ -19,8 +19,8 @@ const PawBullet = () => (
   />
 );
 
-const comicSans = { fontFamily: "'Comic Sans MS', cursive", fontSize: 13 } as const;
-const sectionTitle = { fontSize: 20, fontFamily: "'Comic Sans MS', cursive", color: "#ff1493" } as const;
+const comicSans = { fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 } as const;
+const sectionTitle = { fontSize: 20, fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", color: "#ff1493" } as const;
 
 const Exam = () => {
   return (
@@ -47,10 +47,10 @@ const Exam = () => {
       {/* Content */}
       <div className="bevel-out" style={{ padding: 15 }}>
         <center>
-          <p style={{ fontSize: 11, fontFamily: "'Comic Sans MS', cursive", color: "#ff1493", letterSpacing: 1 }}>
+          <p style={{ fontSize: 11, fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", color: "#ff1493", letterSpacing: 1 }}>
             ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
           </p>
-          <h1 style={{ fontSize: 26, fontFamily: "'Comic Sans MS', cursive", color: "#ff1493", marginBottom: 4 }}>
+          <h1 style={{ fontSize: 26, fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", color: "#ff1493", marginBottom: 4 }}>
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />{" "}
             GAMLA TENTOR{" "}
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />
@@ -203,7 +203,7 @@ const Exam = () => {
         <CatDivider />
 
         <center>
-          <p style={{ fontSize: 11, fontFamily: "'Comic Sans MS', cursive", color: "#ff1493", letterSpacing: 1 }}>
+          <p style={{ fontSize: 11, fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", color: "#ff1493", letterSpacing: 1 }}>
             ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
           </p>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 10, margin: "8px 0" }}>
@@ -211,7 +211,7 @@ const Exam = () => {
             <img src={coderSignImg} alt="" style={{ width: 50 }} />
             <img src={catFaceImg} alt="" style={{ width: 22 }} />
           </div>
-          <small style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 10, color: "#ff69b4" }}>
+          <small style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 10, color: "#ff69b4" }}>
             ~*~ best viewed with Internet Explorer 5.0 at 800x600 ~*~
             <br />made with luv and notepad 💕 <img src={catFaceImg} alt="" style={{ width: 16, verticalAlign: "middle" }} />
             <br />©2002 ~*INDA*~ all rights reserved meow~

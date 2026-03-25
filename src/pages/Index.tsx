@@ -88,7 +88,7 @@ const Index = () => {
           <p
             style={{
               fontSize: 11,
-              fontFamily: "'Comic Sans MS', cursive",
+              fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               letterSpacing: 1,
             }}
@@ -99,7 +99,7 @@ const Index = () => {
           <h1
             style={{
               fontSize: 26,
-              fontFamily: "'Comic Sans MS', cursive",
+              fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               marginBottom: 4,
             }}
@@ -113,7 +113,7 @@ const Index = () => {
             className="marquee-text"
             style={{
               fontSize: 14,
-              fontFamily: "'Comic Sans MS', cursive",
+              fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff69b4",
             }}
           >
@@ -129,7 +129,7 @@ const Index = () => {
           <span
             style={{
               fontSize: 14,
-              fontFamily: "'Comic Sans MS', cursive",
+              fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               fontWeight: "bold",
             }}
@@ -140,10 +140,10 @@ const Index = () => {
 
         <CatDivider />
 
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
           om du kan läsa detta betyder det att du faktiskt lyckades ta dig in på denna super-hemliga lilla web page... vilket tyvärr också betyder att du nu är kvalificerad för vidare prövning!!!
         </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
           Eftersom du kunde lösa uppgiften och hitta hit finns det inte längre någon ursäkt som
           <br />
           <b>"oj jag råkade bara få rätt"</b>
@@ -152,24 +152,24 @@ const Index = () => {
           <br />
           <b>"det var nog c(h)atten som gjorde allt"</b>
         </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13, fontWeight: "bold", color: "#ff1493" }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13, fontWeight: "bold", color: "#ff1493" }}>
           NOPE!!!
         </p>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
           för att säkerställa att INDA:s studenter verkligen besitter de mystiska och uråldriga kunskaper de förväntas ha samlat på sig under kursens gång har det med mycket kort varsel beslutats att en
         </p>
         <center>
           <h2
             style={{
               fontSize: 22,
-              fontFamily: "'Comic Sans MS', cursive",
+              fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
             }}
           >
             !!! OBLIGATORISK TENTA !!!
           </h2>
         </center>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
           måste äga rum.
         </p>
 
@@ -178,7 +178,7 @@ const Index = () => {
         <h2
           style={{
             fontSize: 20,
-            fontFamily: "'Comic Sans MS', cursive",
+            fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
           }}
         >
@@ -198,7 +198,7 @@ const Index = () => {
         <h2
           style={{
             fontSize: 20,
-            fontFamily: "'Comic Sans MS', cursive",
+            fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
           }}
         >
@@ -217,13 +217,13 @@ const Index = () => {
         <h2
           style={{
             fontSize: 20,
-            fontFamily: "'Comic Sans MS', cursive",
+            fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
           }}
         >
           ⚠️ vIkTiGt mEdDeLaNdE
         </h2>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
           Pga lokalbrist var META den enda plats som gick att boka för denna ytterst seriösa examination.
           <br />
           Detta är helt normalt och inte alls märkligt.
@@ -238,13 +238,13 @@ const Index = () => {
         <h2
           style={{
             fontSize: 20,
-            fontFamily: "'Comic Sans MS', cursive",
+            fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
           }}
         >
           📝 fInAl nOtE
         </h2>
-        <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
           Du har redan klarat första testet genom att hitta hit.
           <br />
           Nu återstår bara att bevisa att du kan överleva resten.
@@ -255,7 +255,7 @@ const Index = () => {
             <img src={coderTypingImg} alt="" style={{ width: 60 }} />
             <img src={catFaceImg} alt="" style={{ width: 28 }} />
           </div>
-          <p style={{ fontFamily: "'Comic Sans MS', cursive", fontSize: 15, fontWeight: "bold", color: "#ff1493" }}>
+          <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15, fontWeight: "bold", color: "#ff1493" }}>
             good luck!!
             <br />
             u will probably need it
@@ -287,7 +287,7 @@ const Index = () => {
           <p
             style={{
               fontSize: 11,
-              fontFamily: "'Comic Sans MS', cursive",
+              fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               color: "#ff1493",
               letterSpacing: 1,
             }}
@@ -297,7 +297,7 @@ const Index = () => {
           <br />
           <small
             style={{
-              fontFamily: "'Comic Sans MS', cursive",
+              fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
               fontSize: 10,
               color: "#ff69b4",
             }}
