@@ -182,9 +182,6 @@ const Index = () => {
               <img src={registerNowImg} alt="Register Now" style={{ border: 0 }} />
             </a>
             <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
-              <img src={buyTicketsImg} alt="Buy Tickets" style={{ border: 0 }} />
-            </a>
-            <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
               <img src={registerHereImg} alt="Register Here" style={{ border: 0 }} />
             </a>
             <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
