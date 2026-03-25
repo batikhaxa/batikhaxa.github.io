@@ -202,9 +202,12 @@ const Index = () => {
             fontSize: 20,
             fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
           }}
         >
-          <img src={pawGif} alt="paw" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> tEnTa iNfO
+          <img src={pawGif} alt="paw" style={{ width: 20, height: 20 }} /> tEnTa iNfO
         </h2>
         <table cellPadding={4} cellSpacing={0} style={{ width: "100%" }}>
           <tbody>
@@ -222,9 +225,12 @@ const Index = () => {
             fontSize: 20,
             fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
           }}
         >
-          <img src={drinkGif} alt="drink" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> dRyCkEs moDuLe
+          <img src={drinkGif} alt="drink" style={{ width: 20, height: 20 }} /> dRyCkEs moDuLe
         </h2>
         <table cellPadding={4} cellSpacing={0} style={{ width: "100%" }}>
           <tbody>
@@ -241,9 +247,12 @@ const Index = () => {
             fontSize: 20,
             fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
           }}
         >
-          <img src={warningGif} alt="warning" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> vIkTiGt mEdDeLaNdE
+          <img src={warningGif} alt="warning" style={{ width: 20, height: 20 }} /> vIkTiGt mEdDeLaNdE
         </h2>
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Pga lokalbrist var META den enda plats som gick att boka för denna ytterst seriösa examination.
@@ -262,9 +271,12 @@ const Index = () => {
             fontSize: 20,
             fontFamily: "'Comic Neue', 'Comic Sans MS', cursive",
             color: "#ff1493",
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
           }}
         >
-          <img src={exclamationGif} alt="note" style={{ width: 20, height: 20, verticalAlign: "middle" }} /> fInAl nOtE
+          <img src={exclamationGif} alt="note" style={{ width: 20, height: 20 }} /> fInAl nOtE
         </h2>
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Du har redan klarat första testet genom att hitta hit.
