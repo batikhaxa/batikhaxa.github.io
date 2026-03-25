@@ -11,6 +11,9 @@ const CatDivider = () => (
   </div>
 );
 import registerNowImg from "@/assets/register-now.gif";
+import buyTicketsImg from "@/assets/buy-tickets.gif";
+import registerHereImg from "@/assets/register-here.gif";
+import starBuyImg from "@/assets/star-buy.gif";
 
 const PawBullet = () => (
   <img
@@ -174,9 +177,20 @@ const Index = () => {
         </p>
 
         <center>
-          <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
-            <img src={registerNowImg} alt="Register Now" style={{ border: 0 }} />
-          </a>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: 10 }}>
+            <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
+              <img src={registerNowImg} alt="Register Now" style={{ border: 0 }} />
+            </a>
+            <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
+              <img src={buyTicketsImg} alt="Buy Tickets" style={{ border: 0 }} />
+            </a>
+            <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
+              <img src={registerHereImg} alt="Register Here" style={{ border: 0 }} />
+            </a>
+            <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
+              <img src={starBuyImg} alt="Star Buy" style={{ border: 0 }} />
+            </a>
+          </div>
         </center>
 
         <CatDivider />
