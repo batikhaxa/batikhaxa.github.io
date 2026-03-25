@@ -140,10 +140,10 @@ const Index = () => {
 
         <CatDivider />
 
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           om du kan läsa detta betyder det att du faktiskt lyckades ta dig in på denna super-hemliga lilla web page... vilket tyvärr också betyder att du nu är kvalificerad för vidare prövning!!!
         </p>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Eftersom du kunde lösa uppgiften och hitta hit finns det inte längre någon ursäkt som
           <br />
           <b>"oj jag råkade bara få rätt"</b>
@@ -155,7 +155,7 @@ const Index = () => {
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 16, fontWeight: "bold", color: "#ff1493" }}>
           NOPE!!!
         </p>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           för att säkerställa att INDA:s studenter verkligen besitter de mystiska och uråldriga kunskaper de förväntas ha samlat på sig under kursens gång har det med mycket kort varsel beslutats att en
         </p>
         <center>
@@ -223,7 +223,7 @@ const Index = () => {
         >
           ⚠️ vIkTiGt mEdDeLaNdE
         </h2>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Pga lokalbrist var META den enda plats som gick att boka för denna ytterst seriösa examination.
           <br />
           Detta är helt normalt och inte alls märkligt.
@@ -244,7 +244,7 @@ const Index = () => {
         >
           📝 fInAl nOtE
         </h2>
-        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13 }}>
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           Du har redan klarat första testet genom att hitta hit.
           <br />
           Nu återstår bara att bevisa att du kan överleva resten.
