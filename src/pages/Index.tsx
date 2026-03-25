@@ -10,7 +10,7 @@ const CatDivider = () => (
     <img src={dividerImg} alt="" style={{ width: "100%", maxWidth: 400, height: "auto" }} />
   </div>
 );
-
+import registerNowImg from "@/assets/register-now.gif";
 
 const PawBullet = () => (
   <img
@@ -172,6 +172,12 @@ const Index = () => {
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           måste äga rum.
         </p>
+
+        <center>
+          <a href="https://tiki.datasektionen.se/events/cab59b33-2481-46c0-95de-6c82c6c285d6" target="_blank" rel="noopener noreferrer">
+            <img src={registerNowImg} alt="Register Now" style={{ border: 0 }} />
+          </a>
+        </center>
 
         <CatDivider />
 
