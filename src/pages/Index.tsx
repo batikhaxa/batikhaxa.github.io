@@ -9,6 +9,7 @@ import drinkGif from "@/assets/drink.gif";
 import warningGif from "@/assets/warning.gif";
 import exclamationGif from "@/assets/exclamation.gif";
 import madewithGif from "@/assets/madewith.gif";
+import silhouetteImg from "@/assets/silhouette.png";
 
 const CatDivider = () => (
   <div style={{ textAlign: "center", margin: "12px 0" }}>
@@ -178,6 +179,22 @@ const Index = () => {
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
           måste äga rum.
         </p>
+
+        <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
+          och som om det inte vore nog har det även avslöjats att eventet kommer ledas av en
+          <b style={{ color: "#ff1493" }}> extremt hemlig och mystisk toast</b> vars identitet
+          under inga omständigheter får röjas innan den ödesdigra kvällen...
+        </p>
+        <center>
+          <img
+            src={silhouetteImg}
+            alt="???"
+            style={{ width: 160, border: "2px solid #ff1493", marginBottom: 10 }}
+          />
+          <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13, color: "#d6336c" }}>
+            vem kan det vara?! 👀
+          </p>
+        </center>
 
         <center>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: 10 }}>
