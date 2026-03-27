@@ -10,6 +10,7 @@ import warningGif from "@/assets/warning.gif";
 import exclamationGif from "@/assets/exclamation.gif";
 import madewithGif from "@/assets/madewith.gif";
 import silhouetteImg from "@/assets/silhouette.png";
+import questionmarkGif from "@/assets/questionmark.gif";
 
 const CatDivider = () => (
   <div style={{ textAlign: "center", margin: "12px 0" }}>
@@ -186,11 +187,25 @@ const Index = () => {
           under inga omständigheter får röjas innan den ödesdigra kvällen...
         </p>
         <center>
-          <img
-            src={silhouetteImg}
-            alt="???"
-            style={{ width: 160, border: "2px solid #ff1493", marginBottom: 10 }}
-          />
+          <div style={{ position: "relative", display: "inline-block", marginBottom: 10 }}>
+            <img
+              src={silhouetteImg}
+              alt="???"
+              style={{ width: 160, border: "2px solid #ff1493", display: "block" }}
+            />
+            <img
+              src={questionmarkGif}
+              alt="?"
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: 80,
+                pointerEvents: "none",
+              }}
+            />
+          </div>
           <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 13, color: "#d6336c" }}>
             vem kan det vara?! 👀
           </p>
