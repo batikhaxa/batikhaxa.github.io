@@ -182,7 +182,7 @@ const Index = () => {
         </p>
 
         <p style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", fontSize: 15 }}>
-          och som om det inte vore nog har det även avslöjats att eventet kommer ledas av en
+          och som om det inte vore nog har det även avslöjats att examinationen kommer ledas av en
           <b style={{ color: "#ff1493" }}> extremt hemlig och mystisk toast</b> vars identitet
           under inga omständigheter får röjas innan den ödesdigra kvällen...
         </p>
