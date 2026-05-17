@@ -128,7 +128,7 @@ const ButtonPage = () => {
             }}
             aria-label="commence tentamen"
           >
-            <img src={redButtonImg} alt="commence tentamen" style={{ display: "block", maxWidth: "100%", height: "auto" }} />
+            <img src={redButtonImg} alt="commence tentamen" style={{ display: "block", maxWidth: "50%", height: "auto" }} />
           </button>
           <p style={{ ...comicSans, margin: "0 0 12px", fontSize: 22, color: "#ff0000" }}>
             COMMENCE TENTAMEN
