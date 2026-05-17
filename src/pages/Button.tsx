@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import dividerImg from "@/assets/divider.gif";
 import pawIcon from "@/assets/paw-icon.png";
 import redButtonImg from "@/assets/red_button.gif";
+import warningGif from "@/assets/warning.gif";
 
 const comicSans = { fontFamily: "'Comic Neue', 'Comic Sans MS', cursive" } as const;
 
@@ -131,6 +132,7 @@ const ButtonPage = () => {
           </button>
           <p style={{ ...comicSans, margin: "0 0 12px", fontSize: 22, color: "#ff1493" }}>
             COMMENCE TENTAMEN
+          </p>
         </center>
 
         <CatDivider />
