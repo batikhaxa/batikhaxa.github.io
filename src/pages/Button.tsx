@@ -105,7 +105,8 @@ const ButtonPage = () => {
           </p>
           <h1 style={{ fontSize: 26, fontFamily: "'Comic Neue', 'Comic Sans MS', cursive", color: "#ff1493", marginBottom: 4 }}>
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />{" "}
-            TENTAMEN UPLOAD ZONE{" "}
+            <img src={warningGif} alt="warning" style={{ width: 20, height: 20 }} /> WaRnInG <img src={warningGif} alt="warning" style={{ width: 20, height: 20 }} /> 
+            !! TENTAMEN UPLOAD ZONE !!{" "}
             <img src={pawIcon} alt="" style={{ width: 28, height: 28 }} />
           </h1>
         </center>
@@ -126,11 +127,10 @@ const ButtonPage = () => {
             }}
             aria-label="commence tentamen"
           >
-            <img src={redButtonImg} alt="commence tentamen" style={{ display: "block", maxWidth: "100%", height: "auto" }} />
+            <img src={redButtonImg} alt="commence tentamen" style={{ display: "block", maxWidth: "100%", height: "500px" }} />
           </button>
           <p style={{ ...comicSans, margin: "0 0 12px", fontSize: 22, color: "#ff1493" }}>
-            commence tentamen
-          </p>
+            COMMENCE TENTAMEN
         </center>
 
         <CatDivider />
