@@ -123,12 +123,13 @@ const ButtonPage = () => {
               border: 0,
               padding: 0,
               margin: "18px 0 8px",
+              width: "50%",
               background: "transparent",
               cursor: "pointer",
             }}
             aria-label="commence tentamen"
           >
-            <img src={redButtonImg} alt="commence tentamen" style={{ display: "block", maxWidth: "50%", height: "auto" }} />
+            <img src={redButtonImg} alt="commence tentamen" style={{ display: "block", width: "100%", height: "auto" }} />
           </button>
           <p style={{ ...comicSans, margin: "0 0 12px", fontSize: 22, color: "#ff0000" }}>
             COMMENCE TENTAMEN
