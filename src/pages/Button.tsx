@@ -123,7 +123,9 @@ const ButtonPage = () => {
               border: 0,
               padding: 0,
               margin: "18px 0 8px",
-              width: "50%",
+              width: "25%",
+              minWidth: 120,
+              maxWidth: 180,
               background: "transparent",
               cursor: "pointer",
             }}
